@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <h2>Formulário para requisição post de novo usuário</h2>
+        <form action="https://www.65660da3eb8bb4b70ef2d91d.mockapi.io/users" method="post">
+            <label for="name">Nome:
+                <input name="name" id="name" type="text" placeholder="Digite seu nome" required autofocus/>
+            </label>
+            <label for="phone">Telefone:
+                <input name="phone" id="phone" type="tel" placeholder="Digite seu telefone" required />
+            </label>
+            <input type="submit" value="Enviar" />
+        </form>
+    </main>
+</body>
+</html>

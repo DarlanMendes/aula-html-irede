@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h2> Autofocus</h2>
+        <!-- Exemplo de autofoco  o input já começa selecionado-->
+        <input type="text" autofocus placeholder="Info qualquer">
+
+
+        <h2>Inert</h2>
+        <!-- Exemplo inert -  O atributo inert torna um elemento 
+        e seu conteúdo inerte, o que significa que não podem ser 
+        interagidos com o usuário. -->
+        <div>
+            <!-- Conteúdo inerte -->
+            <details inert>
+                <summary>Detalhes inertes</summary>
+                <p>Conteúdo inerte</p>
+            </details>
+        </div>
+
+        <h2>Checked</h2>
+        <!-- Exemplo checked - Usado em elementos de formulário como checkboxes e 
+            radios para indicar que o elemento deve estar marcado por padrão.-->
+            <label>
+                <input type="checkbox" checked>
+                Check 01
+            </label>
+            <label>
+                <input type="checkbox" >
+                Check 02
+            </label>
+
+        <h2>Disabled</h2>
+        <!-- Exemplo disabled - Desativa a interação com o elemento. 
+        No exemplo, um botão está desativado e não pode ser clicado.  -->
+        <button disabled>Botão Desativado</button>
+
+        <h2>Required</h2>
+        <!-- Exemplo required - Indica que um campo de formulário deve 
+            ser preenchido antes que o formulário possa ser enviado.-->
+            <form>
+                <input type="text" required placeholder="preencha o seu nome">
+                <button>Enviar</button>
+            </form>
+        
+
+        <h2>Reversed</h2>
+        <!-- Exemplo de reversed - Usado em listas ordenadas (<ol>) para inverter
+             a ordem dos itens. -->
+             <ol reversed>
+                <li>Item 3</li>
+                <li>Item 2</li>
+                <li>Item 1</li>
+              </ol>
+              
+        <h2>Allowfullscreen</h2>
+        <!-- Exemplo de Allow fullscreen - Usado em elementos <iframe> para permitir 
+            que o conteúdo do iframe seja exibido em modo de tela cheia.-->
+        <iframe src="https://www.globo.com" allowfullscreen id="iframeEx"></iframe>
+        <button onclick="fullscreen()">Fullscreen</button>
+
+       
+
+        <h2>Loop  -  Autoplay - Controls - Muted</h2>
+        <!-- Exemplo de atributos para video -->
+        <video src="./video/HINO DO FLAMENGO.mp4" loop autoplay controls muted></video>
+
+       
+        
+        
+        <h2>Readonly</h2>
+        <!-- Exemplo de Readonly - Torna um campo de entrada somente leitura, o que significa
+             que o usuário pode ver, mas não pode modificar o valor. -->
+        <input type="text" value="Texto somente leitura" readonly>
+
+        <h2>Multiple</h2>
+        <!-- Exemplo de multiple - Usado em campos de arquivo (<input type="file">) para permitir 
+            que o usuário selecione vários arquivos. -->
+        <input type="file" multiple>
+
+        <h2>Selected</h2>
+        <!-- Exemplo de selected - Indica que uma opção em um menu suspenso (<select>) deve ser 
+            selecionada por padrão. -->
+            <select>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2" selected>Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+              </select>
+                
+
+    </main>
+
+
+<script src="atributosBol.js"></script>
+</body>
+
+</html>

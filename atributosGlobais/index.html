@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos Globais</title>
+</head>
+
+<body>
+    <div id="valor-unico">
+        <p>
+            O atributo global id é usado para definir um
+            identificador exclusivo para um elemento.
+        </p>
+    </div>
+    <!-- O id é uma boa forma de fragmentar a página  -->
+    <!-- Seção de navegação -->
+    <nav>
+        <a href="#reg">Register</a>
+        <a href="#about">About</a>
+        <a href="#teachers">Instructors</a>
+        <a href="#feedback">Testimonials</a>
+    </nav>
+    <!--  Seções identificadas por id -->
+    <section id="reg">
+        <h2>Register</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quis voluptatem sequi consectetur, 
+            eaque facere molestiae illo! Provident odio dignissimos sint voluptas ipsum, numquam ipsa reprehenderit 
+            aperiam repudiandae sequi quae.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam excepturi unde, ipsam reiciendis
+             iste vel cumque aliquid amet deleniti, porro, nam corporis at ipsum quas tempora neque consectetur fuga consequatur?
+        </p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quis voluptatem sequi consectetur, 
+            eaque facere molestiae illo! Provident odio dignissimos sint voluptas ipsum, numquam ipsa reprehenderit 
+            aperiam repudiandae sequi quae.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, necessitatibus optio? Facilis 
+            non doloremque accusamus! Distinctio harum voluptates ducimus officiis recusandae! Quasi et ad enim aut necessitatibus vero numquam aperiam.
+        </p>
+    </section>
+
+    <section id="teachers">
+        <h2>Instructors</h2>
+        <h3>Hal 9000 <span>&amp;</span> EVE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quis voluptatem sequi consectetur, 
+            eaque facere molestiae illo! Provident odio dignissimos sint voluptas ipsum, numquam ipsa reprehenderit 
+            aperiam repudiandae sequi quae.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet molestiae nam, fuga enim corrupti repellendus
+             tempora voluptatem aspernatur quibusdam quis, similique a, aliquam amet iusto tenetur dolores sequi sed eaque!
+        </p>
+    </section>
+
+    <section id="feedback">
+        <h2>Testimonials</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quis voluptatem sequi consectetur, 
+            eaque facere molestiae illo! Provident odio dignissimos sint voluptas ipsum, numquam ipsa reprehenderit 
+            aperiam repudiandae sequi quae.
+        </p>
+    </section>
+
+<!-- Atributo Class -->
+<!-- O atributo class fornece outra maneira de segmentar 
+    elementos com CSS (e JavaScript), mas não tem nenhuma outra 
+    finalidade em HTML, embora as bibliotecas e as bibliotecas de 
+    componentes possam usá-los.
+ -->
+ <h2 class="important">Titulo de algo importante</h2>
+ <h3 class="important"> Algo importante</h3>
+
+<!-- Atributo style  -->
+<!-- O atributo style permite aplicar estilos inline, que são estilos aplicados a um 
+    único elemento em que o atributo é definido. -->
+<h2 style="background-color:blue; color:white;padding:2px 4px"> Aqui é aplicado estilo inline</h2>
+
+<!-- Atributo tabindex -->
+<!-- O atributo tabindex é usado para controlar a ordem em que os elementos de uma página HTML 
+    recebem o foco quando você pressiona a tecla Tab no teclado. Ele afeta a acessibilidade da página, 
+    especialmente para usuários que navegam por meio de teclado ou outros dispositivos assistivos. -->
+
+    <!-- tabindex="-1": Elemento focável via JavaScript, mas não na sequência de tabulação padrão -->
+<div tabindex="-1">Elemento não tabulável</div>
+
+<!-- tabindex="0": Elemento focável e na ordem de tabulação padrão da página -->
+<button tabindex="0">Botão Tabulável</button>
+
+<!-- tabindex="1": Evite usar valores positivos, pois podem causar confusão na navegação -->
+<a href="#" tabindex="1">Link Priorizado (evite)</a>
+<h2 tabindex="0">Tabulável</h2>
+
+<h2>Role</h2>
+<!-- Atributo role  -->
+<!--  O atributo role faz parte da especificação ARIA(Accessible Rich Internet Applications), 
+    e não da especificação HMTL WhatWG. O atributo role pode 
+    ser usado para fornecer significado semântico ao conteúdo, 
+    permitindo que os leitores de tela informem aos usuários do site sobre a interação esperada do usuário de um objeto.-->
+
+    <!-- Exemplo de botão semântico usando ARIA -->
+<button role="button" onclick="alert('Clicou no botão!')">Clique-me</button>
+
+<!-- Exemplo de área de status usando ARIA -->
+<div role="status" aria-live="polite">Atualizações de status aparecerão aqui</div>
+
+<!-- Exemplo de barra de progresso usando ARIA -->
+<div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    50% concluído
+</div>
+<!-- Papéis Comuns:
+
+Existem vários papéis (role) definidos em ARIA, como button (botão), 
+status (status), progressbar (barra de progresso), link (link), etc.
+Esses papéis ajudam a descrever a natureza e a função dos elementos, 
+tornando a experiência de navegação mais compreensível para usuários de leitores de tela.
+
+Atributos Relacionados:
+
+Além do role, ARIA frequentemente usa outros atributos, como aria-live, aria-labelledby, 
+aria-describedby, entre outros, para fornecer informações adicionais. -->
+
+
+<!-- Contenteditable -->
+<!-- O atributo contenteditable é um atributo HTML que determina se o conteúdo de um elemento 
+    pode ser editado pelo usuário. -->
+    <h2> Contenteditable</h2>
+    <div contenteditable="true">
+        Este é um exemplo de conteúdo editável. Você pode clicar aqui e começar a digitar.
+    </div>
+    
+</body>
+
+</html>
